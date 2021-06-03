@@ -17,11 +17,11 @@
                 <img src="images/logo.png" alt="">
             </div>
             <ul id="list">
-                <li><a href="#"><i class="fa fa-home"></i>HOME</a></li>
-                <li><a href="#"><i class="fa fa-info"></i>ABOUT US</a></li>
-                <li><a href="#"><i class="fa fa-gift"></i>SERVICES</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>REVIEWS</a></li>
-                <li><a href="#"><i class="fa fa-phone"></i>CONTACT</a></li>
+                <li><a href="#banner"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="#about"><i class="fa fa-info"></i>ABOUT US</a></li>
+                <li><a href="#services"><i class="fa fa-gift"></i>SERVICES</a></li>
+                <li><a href="#reviews"><i class="fa fa-user"></i>REVIEWS</a></li>
+                <li><a href="#contact"><i class="fa fa-phone"></i>CONTACT</a></li>
                 <img src="https://img.icons8.com/bubbles/100/000000/cancel.png" alt="" id="closeMenu">
             </ul>
             <img src="https://img.icons8.com/bubbles/100/000000/menu.png" alt="" id="sideMenu">
@@ -151,7 +151,7 @@
                     <form action="">
                         <div class="input-group">
                             <input type="text" placeholder="Name">
-                            <input type="text" placeholder="E-Mail">
+                            <input type="email" placeholder="E-Mail">
                         </div>
                         <textarea rows="5" placeholder="Leave Message"></textarea>
                         <button type="button">SUBMIT</button>
@@ -163,10 +163,10 @@
         <p class="copyright">
             Made with <i class="fa fa-heart-o"></i> by Mohd Tahir.
         </p>
+
     </section>
 
-
-
+    <script src="js/smooth-scroll.js"></script>
     <script>
         var display = document.getElementById("sideMenu");
         var hidden = document.getElementById("closeMenu");
@@ -180,6 +180,8 @@
         hidden.onclick = function() {
             list.style.right = "-50%";
         }
+
+        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
 
 </body>

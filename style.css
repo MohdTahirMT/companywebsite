@@ -139,7 +139,7 @@ button,
 #about,
 #services,
 #reviews,
-#comtact {
+#contact {
     width: 100%;
     padding: 100px 0;
 }
@@ -200,8 +200,9 @@ h3 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
+    word-spacing: 5px;
 }
 
 #services {
@@ -271,6 +272,10 @@ p {
     line-height: 25px;
 }
 
+#contact {
+    background: #f7f7f7;
+}
+
 .location {
     width: fit-content;
     margin: auto;
@@ -313,7 +318,7 @@ form textarea {
 }
 
 .input-group {
-    display: flex;
+    display: flexbox;
     justify-content: space-between;
 }
 
